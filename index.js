@@ -18,8 +18,6 @@ async function inputBuildWrite () {
         shape = new Square(userInputs.shapeColor, userInputs.svgText, userInputs.textColor);
     }
 
-    // console.log(shape.svgContent.getAttribute('fill'));
-
     // Create SVG file - write to file
     writeSvgFile(logoFile, shape.svgContent);
 }
